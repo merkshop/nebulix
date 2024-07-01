@@ -146,5 +146,7 @@
   "weight": "Peso",
   "weight_in_grams": "Peso en gramos",
   "width": "Ancho",
-  "width_in_cm": "Ancho en cm"
+  "width_in_cm": "Ancho en cm",
+    "contact_thanks": "Gracias por contactarnos. Nos comunicaremos con usted lo antes posible.",
+  "contact_error": "No pudimos enviar tu mensaje. Inténtalo de nuevo."
 }
