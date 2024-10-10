@@ -1,4 +1,4 @@
-# Nebulix | Astro + Static CMS
+# merkshop | Astro + Static CMS
 
 [![License: CC BY-ND 4.0](https://img.shields.io/badge/License-CC_BY--ND_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nd/4.0/)
 
@@ -9,7 +9,7 @@ A Universe of Possibilities: Blogs, Portfolios, Webshop, Restaurant Menus, and B
 
 
 
-![Nebulix](https://nebulix.unfolding.io/screenshots/nebulix-00-start.jpg)
+![Merkshop](https://merkshop.merkshop.io/screenshots/merkshop-00-start.jpg)
 
 ## Notice
 
@@ -20,7 +20,7 @@ Easily deploy this theme to Netlify with a single click, and conveniently update
 
 
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/unfolding-io/nebulix#BLOG_SLUG=blog&PORTFOLIO_SLUG=work&SHOP_SLUG=shop&MENU_SLUG=menu&WEBSITE_LANGUAGE=en&CURRENCY=USD&UNITS=metric&NODE_VERSION=18)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/merkshop-io/merkshop#BLOG_SLUG=blog&PORTFOLIO_SLUG=work&SHOP_SLUG=shop&MENU_SLUG=menu&WEBSITE_LANGUAGE=en&CURRENCY=USD&UNITS=metric&NODE_VERSION=18)
 
 
 ## Constellations of Features:
@@ -37,7 +37,7 @@ Easily deploy this theme to Netlify with a single click, and conveniently update
 -   🕵 Unveil Hidden Constellations with Full Text Search using Pagefind
 
 ## ♻️ Page Speed and Emissions
-Experience the green and swift capabilities of Nebulix. With an impressively low emission of 0.05g - 0.07g CO2 per page visit and consistently achieving a lighthouse score between 98 and 100, Nebulix ensures both speed and environmental consciousness for your website.
+Experience the green and swift capabilities of merkshop. With an impressively low emission of 0.05g - 0.07g CO2 per page visit and consistently achieving a lighthouse score between 98 and 100, merkshop ensures both speed and environmental consciousness for your website.
 
 ## 🚀 Getting Started
 
@@ -87,7 +87,7 @@ Navigate to `src/pages/admin.astro` and provide your Git repository details. You
 const config = {
 	locale: lang,
 	site_url: url,
-	logo_url: 'https://nebulix.unfolding.io/nebulix-logo.svg',
+	logo_url: 'https://merkshop.merkshop.io/merkshop-logo.svg',
 	local_backend: true,
 	backend: {
 		name: 'gitlab',
@@ -160,13 +160,13 @@ All commands are run from the root of the project, from a terminal:
 ## 📁 Documentation
 Learn how to harness the power of Static CMS and craft a distinctive website that stands out from the crowd.
 
-[Documentation](https://nebulix.unfolding.io/blog/tag/docs)
+[Documentation](https://merkshop.merkshop.io/blog/tag/docs)
 
 ## 🌐 Demo
 
-Witness the extraordinary speed of Nebulix in action.
+Witness the extraordinary speed of merkshop in action.
 
-[Demo](https://nebulix.unfolding.io)
+[Demo](https://merkshop.merkshop.io)
 
 ## 👀 Want to learn more about Astro?
 
@@ -182,12 +182,12 @@ If you encounter any issues or bugs, we encourage you to open an issue in the re
 
 ## 👑 Premium Support
 
-For those seeking priority assistance, we offer premium support services. Do you need support, custom intergrations, design, or development? Feel free to reach out to me by email at [hello@unfolding.io.](mailto:hello@unfolding.io.) find me on [UpWork](https://www.upwork.com/freelancers/~01dcde6b3915c74c30) Im here to help!
+For those seeking priority assistance, we offer premium support services. Do you need support, custom intergrations, design, or development? Feel free to reach out to me by email at [hello@merkshop.io.](mailto:hello@merkshop.io.) find me on [UpWork](https://www.upwork.com/freelancers/~01dcde6b3915c74c30) Im here to help!
 
 
 ## 📝 License
 
-Want to get rid of the attribution? Simply [purchase a license](https://nebulix.unfolding.io/shop/nebulix-license/) and you're good to go.
+Want to get rid of the attribution? Simply [purchase a license](https://merkshop.merkshop.io/shop/merkshop-license/) and you're good to go.
 
 ## 🚕 Roadmap
 
@@ -195,29 +195,29 @@ As we journey towards v1.0, our path includes enriching the page builder with a 
 
 ## ☕️ Want to Caffeinate your Developer?
 
-By [caffeinating](https://www.buymeacoffee.com/unfolding.io) your developer, you're not just getting the best out of them; you're also ensuring a cheerful and energetic work environment.😊
+By [caffeinating](https://www.buymeacoffee.com/merkshop.io) your developer, you're not just getting the best out of them; you're also ensuring a cheerful and energetic work environment.😊
 
-[![buymeacoffee](https://starfunnel.unfolding.io/screenshots/bymeacoffee.webp)](https://www.buymeacoffee.com/unfolding.io)
+[![buymeacoffee](https://starfunnel.merkshop.io/screenshots/bymeacoffee.webp)](https://www.buymeacoffee.com/merkshop.io)
 
 
 
 ## 📸 Screenshots
 
-![Nebulix](https://nebulix.unfolding.io/screenshots/nebulix-01-shop.jpg)
+![merkshop](https://merkshop.merkshop.io/screenshots/merkshop-01-shop.jpg)
 
-![Nebulix](https://nebulix.unfolding.io/screenshots/nebulix-02-shop-category.jpg)
+![merkshop](https://merkshop.merkshop.io/screenshots/merkshop-02-shop-category.jpg)
 
-![Nebulix](https://nebulix.unfolding.io/screenshots/nebulix-03-shop-product.jpg)
+![merkshop](https://merkshop.merkshop.io/screenshots/merkshop-03-shop-product.jpg)
 
-![Nebulix](https://nebulix.unfolding.io/screenshots/nebulix-04-shop-product.jpg)
+![merkshop](https://merkshop.merkshop.io/screenshots/merkshop-04-shop-product.jpg)
 
-![Nebulix](https://nebulix.unfolding.io/screenshots/nebulix-05-shop-product-dark.jpg)
+![merkshop](https://merkshop.merkshop.io/screenshots/merkshop-05-shop-product-dark.jpg)
 
-![Nebulix](https://nebulix.unfolding.io/screenshots/nebulix-06-blogpost.jpg)
+![merkshop](https://merkshop.merkshop.io/screenshots/merkshop-06-blogpost.jpg)
 
-![Nebulix](https://nebulix.unfolding.io/screenshots/nebulix-07-portfolio.jpg)
+![merkshop](https://merkshop.merkshop.io/screenshots/merkshop-07-portfolio.jpg)
 
-![Nebulix](https://nebulix.unfolding.io/screenshots/nebulix-08-footer.jpg)
+![merkshop](https://merkshop.merkshop.io/screenshots/merkshop-08-footer.jpg)
 
 
 

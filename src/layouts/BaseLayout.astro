@@ -32,6 +32,15 @@ const contact = await getEntry("config", "contact");
     />
   </head>
   <body class={`surface-base ${pageClass || ""}`}>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-TS6JL6MQ"
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden"></iframe></noscript
+    >
+    <!-- End Google Tag Manager (noscript) -->
     {
       snipcartKey && (
         <SnipCart
@@ -78,7 +87,7 @@ const contact = await getEntry("config", "contact");
       }
       <Picture
         slot="image"
-        src={contact.data.form.thumbnail}
+        src={contact.data.form?.thumbnail}
         alt={`contact`}
         sizes="50vw"
         aspect={4 / 5}
@@ -94,7 +103,7 @@ const contact = await getEntry("config", "contact");
           {
             media: "(max-width: 768px)",
             ar: 21 / 9,
-            src: contact.data.form.thumbnail,
+            src: contact.data.form?.thumbnail,
             layout: "constrained",
             breakpoints: [500, 601, 768, 820, 962, 1280, 1440, 1536, 1920],
           },
