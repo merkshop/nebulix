@@ -12,7 +12,6 @@ const remarkEmbedder = fauxRemarkEmbedder.default;
 const oembedTransformer = fauxOembedTransformer.default;
 import vue from "@astrojs/vue";
 /** @type {import('astro-m2dx').Options} */
-import partytown from "@astrojs/partytown";
 const m2dxOptions = {
   exportComponents: true,
   unwrapImages: true,
@@ -32,13 +31,6 @@ export default defineConfig({
       appEntrypoint: "/src/pages/_app",
     }),
     astroImageTools,
-    partytown({
-      forward: [
-        ['dataLayer.push', { preserveBehavior: true }],
-        ['fbq', { preserveBehavior: false }],
-        'gtm.push'
-      ]
-    }),
   ],
   markdown: {
     extendDefaultPlugins: true,
