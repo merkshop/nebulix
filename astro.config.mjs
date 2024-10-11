@@ -33,9 +33,11 @@ export default defineConfig({
     }),
     astroImageTools,
     partytown({
-      config: {
-        forward: ["dataLayer.push"],  // Reenviar dataLayer.push al worker de Partytown
-      },
+      forward: [
+        ['dataLayer.push', { preserveBehavior: true }],
+        ['fbq', { preserveBehavior: false }],
+        'gtm.push'
+      ]
     }),
   ],
   markdown: {

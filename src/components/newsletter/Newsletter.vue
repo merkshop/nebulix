@@ -23,64 +23,85 @@
   </form>
 </template>
 
-<script setup>
+<script>
 import { ref, computed, reactive } from "vue";
 import { t } from "@util/translate";
 import { useAsyncValidator } from "@vueuse/integrations/useAsyncValidator";
 import Loading from "@components/common/Loading.vue";
 import "vue3-toastify/dist/index.css";
 import { toast } from "vue3-toastify";
-const props = defineProps({
-  type: {
-    type: String,
-    required: false,
-    default: "mailchimp",
-  },
-  list_id: String,
-});
-const loading = ref(false);
-const message = ref(null);
-const form = reactive({ email: "" });
-const rules = {
-  email: [
-    {
-      type: "email",
-      required: true,
-    },
-  ],
-};
-const { pass, isFinished, errorFields } = useAsyncValidator(form, rules);
-const canSubmit = computed(() => {
-  return !loading.value && isFinished.value && pass.value;
-});
 
-const submit = () => {
-  if (props.type === "mailchimp") {
-    loading.value = true;
-    fetch("/api/subscribe-mailchimp", {
-      method: "POST",
-      body: JSON.stringify({ email: form.email }),
-      headers: { "Content-Type": "application/json" },
-    })
-      .then((r) => r.json())
-      .then((data) => {
-        if (data.status === "pending") {
-          toast.success(t("newsletter_thanks"));
-          form.email = "";
-        } else if (data.status === "Member Exists") {
-          toast.info(t("newsletter_already_subscribed"));
-          form.email = "";
-        } else {
-          toast.error(t("newsletter_error"));
-        }
-      })
-      .catch((e) => {
-        message.value = t("newsletter_error");
-        toast.error(t("newsletter_error"));
-      })
-      .finally(() => {
-        loading.value = false;
-      });
-  }
+export default {
+  props: {
+    type: {
+      type: String,
+      required: false,
+      default: "mailchimp",
+    },
+    list_id: {
+      type: String,
+      required: false,
+    },
+  },
+  setup(props) {
+    const loading = ref(false);
+    const message = ref(null);
+    const form = reactive({ email: "" });
+
+    const rules = {
+      email: [
+        {
+          type: "email",
+          required: true,
+        },
+      ],
+    };
+
+    const { pass, isFinished, errorFields } = useAsyncValidator(form, rules);
+
+    const canSubmit = computed(() => {
+      return !loading.value && isFinished.value && pass.value;
+    });
+
+    const submit = () => {
+      if (props.type === "mailchimp") {
+        loading.value = true;
+        fetch("/api/subscribe-mailchimp", {
+          method: "POST",
+          body: JSON.stringify({ email: form.email }),
+          headers: { "Content-Type": "application/json" },
+        })
+          .then((r) => r.json())
+          .then((data) => {
+            if (data.status === "pending") {
+              toast.success(t("newsletter_thanks"));
+              form.email = "";
+            } else if (data.status === "Member Exists") {
+              toast.info(t("newsletter_already_subscribed"));
+              form.email = "";
+            } else {
+              toast.error(t("newsletter_error"));
+            }
+          })
+          .catch(() => {
+            message.value = t("newsletter_error");
+            toast.error(t("newsletter_error"));
+          })
+          .finally(() => {
+            loading.value = false;
+          });
+      }
+    };
+
+    return {
+      form,
+      loading,
+      message,
+      errorFields,
+      canSubmit,
+      submit,
+      t, // Asegúrate de retornar `t` para usarlo en el template
+    };
+  },
 };
 </script>
