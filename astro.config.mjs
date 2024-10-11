@@ -21,7 +21,7 @@ const m2dxOptions = {
 
 // https://astro.build/config
 export default defineConfig({
-  site: "http://localhost:4321/",
+  site: "https://merkshop.com.mx/",
   integrations: [
     icon(),
     mdx({}),
